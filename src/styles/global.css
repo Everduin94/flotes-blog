@@ -1,14 +1,27 @@
 html {
   background-color: #f1f5f9;
   font-family: sans-serif;
+  height: 100vh;
+  width: 100vw;
+}
+
+.dark body {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
 }
 
 body {
-  margin: 0 auto;
+  height: 100%;
   width: 100%;
-  max-width: 80ch;
   padding: 1rem;
   line-height: 1.5;
+  /* TODO: Filler: Lookup proper center */
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 
 * {
