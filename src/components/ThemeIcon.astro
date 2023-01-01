@@ -1,7 +1,7 @@
 ---
 ---
 
-<script>
+<script is:inline>
   const theme = (() => {
     if (typeof localStorage !== "undefined" && localStorage.getItem("theme")) {
       return localStorage.getItem("theme");
@@ -33,7 +33,7 @@
     .addEventListener("click", handleToggleClick);
 </script>
 
-<div id="themeToggle">
+<div id="themeToggle" class="hover:cursor-pointer">
   <svg width="30px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path
       class="sun"

@@ -4,6 +4,7 @@ import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import Greeting from "../components/Greeting.svelte";
+import BlogPostLink from "../components/BlogPostLink.astro";
 const allPosts = await Astro.glob("../pages/posts/*.md");
 
 const pageTitle = "My Astro Learning Blog";
@@ -13,13 +14,10 @@ const pageTitle = "My Astro Learning Blog";
   <main>
     <Header />
     <h1>{pageTitle}</h1>
-    <p>This is where I will post about my journey learning Astro.</p>
-    <ul>
+    <ul class="grid auto-rows-max grid-flow-row gap-4 my-8">
       {
         allPosts.map((post) => (
-          <li>
-            <a href={post.url}>{post.frontmatter.title}</a>
-          </li>
+          <BlogPostLink title={post.frontmatter.title} url={post.url} />
         ))
       }
     </ul>

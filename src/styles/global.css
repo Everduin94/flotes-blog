@@ -1,13 +1,12 @@
 html {
-  background-color: #f1f5f9;
   font-family: sans-serif;
   height: 100vh;
   width: 100vw;
 }
 
 .dark body {
-  background-color: #0d0950;
-  color: #fff;
+  background-color: 	#1e1e2e;
+  color: #cdd6f4;
 }
 
 .dark .nav-links a {
@@ -17,11 +16,7 @@ html {
 body {
   height: 100%;
   width: 100%;
-  padding: 1rem;
   line-height: 1.5;
-  /* TODO: Filler: Lookup proper center */
-  padding-left: 20vw;
-  padding-right: 20vw;
 }
 
 * {
@@ -44,9 +39,7 @@ h1 {
 }
 
 .nav-links a {
-  display: block;
   text-align: center;
-  padding: 10px 0;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -86,7 +79,6 @@ h1 {
 
   .nav-links a {
     display: inline-block;
-    padding: 15px 20px;
   }
 
   .hamburger {
