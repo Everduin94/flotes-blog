@@ -1,8 +1,35 @@
 ---
-import Social from './Social.astro';
+import Social from "./Social.astro";
 ---
 
-<footer class="py-4 flex gap-2 ">
-  <Social platform="twitter" username="BoogersLLC" />
-  <Social platform="github" username="everduin94" />
+<footer class="grid py-4 gap-2 grid-cols-1 auto-cols-max grid-flow-col">
+  <div>
+    <a
+      target="_blank"
+      title="Navigate to Flotes App"
+      aria-label="Flotes"
+      rel="noopener noreferrer"
+      href="https://flotes.app"
+      class="hover:text-[#cba6f7] transition-all underline">Flotes App</a
+    >
+    |
+    <a
+      target="_blank"
+      title="Navigate to Flotes Discord Server"
+      aria-label="Discord"
+      rel="noopener noreferrer"
+      href="https://discord.gg/qKaKeGT8sZ"
+      class="hover:text-[#cba6f7] transition-all underline">Join our Discord</a
+    >
+  </div>
+  <div>
+    <a
+      target="_blank"
+      title="RSS Feed XML"
+      aria-label="RSS"
+      rel="noopener noreferrer"
+      href="https://blog.flotes.app/rss.xml"
+      class="hover:text-[#cba6f7] transition-all underline">RSS</a
+    >
+  </div>
 </footer>
