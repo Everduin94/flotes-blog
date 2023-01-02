@@ -28,32 +28,21 @@ h1 {
   font-size: 2.5rem;
 }
 
+/* PROSE */
+h1, h2, h3, h4, strong {
+  color: #1e1e2e !important;
+}
+
+.dark h1,.dark  h2,.dark  h3,.dark  h4,.dark  strong {
+  color: #cdd6f4 !important;
+}
+
+/* END PROSE */
+
 /* nav styles */
-.nav-links {
-  width: 100%;
-  top: 5rem;
-  left: 48px;
-  background-color: #ff9776;
-  display: none;
-  margin: 0;
-}
-
-.nav-links a {
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.nav-links a:hover, a:focus {
-  background-color: #ff9776;
-}
-
 .expanded {
   display: unset;
 }
-
 
 .hamburger {
   padding-right: 20px;

@@ -6,21 +6,36 @@ const { frontmatter } = Astro.props;
 
 <Layout title={frontmatter.title}>
   <Header />
-  <p>Published on: {frontmatter.pubDate.slice(0, 10)}</p>
-  <p>Written by {frontmatter.author}</p>
-  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
-  <div class="tags gap-1 p-2">
-    {
-      frontmatter.tags.map((tag: string) => (
-        <p class="tag bg-purple-200 border-purple-800  border rounded-md px-1.5 py-0.5">
-          <a class="text-purple-800" href={`/tags/${tag}`}>
-            {tag}
-          </a>
-        </p>
-      ))
-    }
+  <div class="mb-8"></div>
+  <div class="mb-1.5 font-bold sm:text-5xl text-3xl">{frontmatter.title}</div>
+  <div class="mb-2 sm:text-xl text-lg dark:text-slate-500 text-slate-600">
+    {frontmatter.description}
   </div>
-  <slot />
+  <div class="grid grid-flow-col auto-cols-max items-center gap-3">
+    <!-- Publish Date -->
+    <p class="text-sm text-slate-500">
+      {new Date(frontmatter.pubDate.slice(0, 10)).toDateString()}
+    </p>
+
+    <!-- Tags -->
+    <div class="tags gap-1 sm:max-w-md max-w-[200px]">
+      {
+        frontmatter.tags.map((tag: string) => (
+          <p class="tag bg-purple-200 border-purple-800 text-sm  border rounded-md px-1.5 py-0.5">
+            <a class="text-purple-800" href={`/tags/${tag}`}>
+              {tag}
+            </a>
+          </p>
+        ))
+      }
+    </div>
+  </div>
+  <div class="mb-4"></div>
+  <img src={frontmatter.image.url} width="300" alt={frontmatter.image.alt} />
+  <div class="mb-8"></div>
+  <div class="prose prose-slate dark:prose-invert pb-16 mocha">
+    <slot />
+  </div>
 </Layout>
 
 <style>
