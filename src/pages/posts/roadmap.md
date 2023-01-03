@@ -22,11 +22,18 @@ A **PWA** (progressive web app) can significantly **improve the experience** for
 
 ![pwa-banner](/pwa-2.png)
 
+TODO
+- [ ] Update to svelte-kit 1.0
+- [ ] Update pwa.png (192 & 512) 
+- [ ] Add configuration
+- [ ] (Additional) Add dark overlay to `main` when sidenav is open on mobile
+
 Progress
-- [x] concept work
+- [x] concept work - [POC](https://github.com/Everduin94/svelte-kit-pwa-example)
 - [ ] development complete
 - [ ] testing / deployment
 - [ ] complete
+- [ ] article
 
 # <a name="mermaid"></a> Mermaid Flowchart Diagrams
 Mermaid is a **markdown syntax** for creating **flowcharts**
