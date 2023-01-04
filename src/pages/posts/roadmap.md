@@ -16,6 +16,7 @@ tags: ["flotes", "work in progress", "features"]
 - [Mermaid Flowchart Diagrams](#mermaid)
 - [Starter / Public Decks](#starter)
 - [Spaced Repetition Controls](#spaced)
+- [Spaced Repetition Filters](#filters)
 
 # <a name="pwa"></a> Flotes as a PWA 
 A **PWA** (progressive web app) can significantly **improve the experience** for **mobile users**
@@ -23,8 +24,8 @@ A **PWA** (progressive web app) can significantly **improve the experience** for
 ![pwa-banner](/pwa-2.png)
 
 TODO
-- [ ] Update to svelte-kit 1.0
-- [ ] Update pwa.png (192 & 512) 
+- [x] Update to svelte-kit 1.0
+- [/] Update pwa.png (192 & 512). Update: Will use white bg for now.
 - [ ] Add configuration
 - [ ] (Additional) Add dark overlay to `main` when sidenav is open on mobile
 
@@ -76,6 +77,29 @@ Progress
 
 # <a name="spaced"></a> Spaced Repetition Controls
 *Spaced Repetition is calculation that notifies the user of the optimal time to study*
+
+Spaced Repetition Features
+- [ ] UI to handle changes
+- [ ] Ability to pause
+- [ ] Ability to reset (go back to 1)
+- [ ] Ability to restart (completed before, do again)
+
+Progress
+- [ ] concept work
+- [ ] development complete
+- [ ] testing / deployment
+- [ ] complete
+
+
+
+# <a name="filters"></a> Spaced Repetition Filters
+*Spaced Repetition has many states: not-started, waiting, optimal, sub-optimal, overdue. Add filters to search by these states*
+
+TODO
+- [ ] POC layout
+- [ ] Update FTS search modal with filters
+- [ ] Wire up changes to filters
+  - [ ] POC: Two ways to determine; search by explicit status, search by date
 
 Spaced Repetition Features
 - [ ] UI to handle changes

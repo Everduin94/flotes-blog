@@ -4,9 +4,7 @@ import Social from "./Social.astro";
 const { url, title, description } = Astro.props;
 ---
 
-<li
-  class="hover:outline-[#cba6f7] transition-all hover:outline rounded-md px-2 py-1"
->
+<li class="hover:outline-[#cba6f7] hover:outline rounded-md px-2 py-1">
   <a href={url}>
     <div class="sm:text-4xl text-2xl font-bold">{title}</div>
     <div class="text-lg text-slate-500">{description}</div>
