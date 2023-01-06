@@ -32,8 +32,8 @@ TODO
 Progress
 - [x] concept work - [POC](https://github.com/Everduin94/svelte-kit-pwa-example)
 - [x] development complete
-- [ ] testing / deployment
-- [ ] complete
+- [x] testing / deployment
+- [x] complete
 - [ ] article
 
 # <a name="mermaid"></a> Mermaid Flowchart Diagrams
