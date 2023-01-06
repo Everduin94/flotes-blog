@@ -25,13 +25,13 @@ A **PWA** (progressive web app) can significantly **improve the experience** for
 
 TODO
 - [x] Update to svelte-kit 1.0
-- [/] Update pwa.png (192 & 512). Update: Will use white bg for now.
-- [ ] Add configuration
-- [ ] (Additional) Add dark overlay to `main` when sidenav is open on mobile
+- [x] Update pwa.png (192 & 512). Update: Will use white bg for now.
+- [x] Add configuration
+- [x] (Additional) Add dark overlay to `main` when sidenav is open on mobile
 
 Progress
 - [x] concept work - [POC](https://github.com/Everduin94/svelte-kit-pwa-example)
-- [ ] development complete
+- [x] development complete
 - [ ] testing / deployment
 - [ ] complete
 - [ ] article
