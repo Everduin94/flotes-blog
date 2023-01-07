@@ -1,8 +1,11 @@
 ---
 export interface Props {
   title: string;
+  metaDescription: string;
 }
 const { title } = Astro.props;
+const { metaDescription } = Astro.props;
+const defaultDescription = 'Free Tech Blog about Svelte, SvelteKit, Tailwind CSS, Astro, Supabase, Postgres, Typescript, Workflows, Productivity, Software Development, Web Dev, How to write better software. Roadmap and upcoming changes to the notetaking study app Flotes.'
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 ---
@@ -14,6 +17,7 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={metaDescription ?? defaultDescription}>
     <title>{title}</title>
 
     <script is:inline>

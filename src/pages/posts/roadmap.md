@@ -12,11 +12,38 @@ tags: ["flotes", "work in progress", "features"]
 
 
 # Outline
-- [Flotes as a PWA](#pwa)
+- [Loading & Auth Improvements](#auth)
+- [Privacy Policy & Terms of Service](#privacy)
 - [Mermaid Flowchart Diagrams](#mermaid)
 - [Starter / Public Decks](#starter)
 - [Spaced Repetition Controls](#spaced)
 - [Spaced Repetition Filters](#filters)
+
+# Complete
+- [Flotes as a PWA](#pwa)
+
+
+# <a name="auth"></a> Loading & Auth Improvements
+Update the Authentication flow to navigate to a specific `authentication` page.
+
+This update will allow Flotes to immediately determine on load if the user is in demoing or logging in.
+
+Which will allow for refactors to have components / screens wait on corresponding database calls
+while delivering a better user experience. 
+- [ ] Remove flickering on stats screen
+- [ ] Remove flicker between demo sidenav and logged in sidenav when logging in
+- [ ] Remove stale state when navigating between notebooks
+
+Additionally, update login page to follow Google branding guidelines
+- Buttons need to describe the action taken. e.g. "Sign in with Google".
+
+# <a name="privacy"></a> Privacy Policy and Terms of Service
+
+I'm currently working on a few drafts of these.
+
+The goal is that your data is your data. We don't want to use your data for anything other than powering features of the application, and we want the policies to reflect that.
+
+We also take measures to implement rules on the database that validate your authentication on the server to prevent other users from accessing your data.
 
 # <a name="pwa"></a> Flotes as a PWA 
 A **PWA** (progressive web app) can significantly **improve the experience** for **mobile users**
