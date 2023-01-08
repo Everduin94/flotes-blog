@@ -1,8 +1,8 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: '2023 Flotes Roadmap'
+title: 'Flotes Roadmap 2023'
 pubDate: 07-01-2022
-description: 'Features, improvements, and ideas'
+description: 'Upcoming changes and ideas. Join our Discord to provide feedback!'
 author: 'Flotes'
 image:
     url: '/header-banner.png' 
@@ -12,7 +12,6 @@ tags: ["flotes", "work in progress", "features"]
 
 
 # Outline
-- [Loading & Auth Improvements](#auth)
 - [Privacy Policy & Terms of Service](#privacy)
 - [Mermaid Flowchart Diagrams](#mermaid)
 - [Starter / Public Decks](#starter)
@@ -21,21 +20,8 @@ tags: ["flotes", "work in progress", "features"]
 
 # Complete
 - [Flotes as a PWA](#pwa)
+- [Loading & Auth Improvements](#auth)
 
-
-# <a name="auth"></a> Loading & Auth Improvements
-Update the Authentication flow to navigate to a specific `authentication` page.
-
-This update will allow Flotes to immediately determine on load if the user is in demoing or logging in.
-
-Which will allow for refactors to have components / screens wait on corresponding database calls
-while delivering a better user experience. 
-- [ ] Remove flickering on stats screen
-- [ ] Remove flicker between demo sidenav and logged in sidenav when logging in
-- [ ] Remove stale state when navigating between notebooks
-
-Additionally, update login page to follow Google branding guidelines
-- Buttons need to describe the action taken. e.g. "Sign in with Google".
 
 # <a name="privacy"></a> Privacy Policy and Terms of Service
 
@@ -45,23 +31,12 @@ The goal is that your data is your data. We don't want to use your data for anyt
 
 We also take measures to implement rules on the database that validate your authentication on the server to prevent other users from accessing your data.
 
-# <a name="pwa"></a> Flotes as a PWA 
-A **PWA** (progressive web app) can significantly **improve the experience** for **mobile users**
+Action items:
+- [ ] Privacy Policy
+- [ ] Terms of Service
+- [ ] Cookie Policy
+- [ ] Update site with links
 
-![pwa-banner](/pwa-2.png)
-
-TODO
-- [x] Update to svelte-kit 1.0
-- [x] Update pwa.png (192 & 512). Update: Will use white bg for now.
-- [x] Add configuration
-- [x] (Additional) Add dark overlay to `main` when sidenav is open on mobile
-
-Progress
-- [x] concept work - [POC](https://github.com/Everduin94/svelte-kit-pwa-example)
-- [x] development complete
-- [x] testing / deployment
-- [x] complete
-- [ ] article
 
 # <a name="mermaid"></a> Mermaid Flowchart Diagrams
 Mermaid is a **markdown syntax** for creating **flowcharts**
@@ -139,3 +114,39 @@ Progress
 - [ ] development complete
 - [ ] testing / deployment
 - [ ] complete
+
+---
+
+
+# <a name="auth"></a> Loading & Auth Improvements
+Update the Authentication flow to navigate to a specific `authentication` page.
+
+This update will allow Flotes to immediately determine on load if the user is in demoing or logging in.
+
+Which will allow for refactors to have components / screens wait on corresponding database calls
+while delivering a better user experience. 
+- [x] Remove flickering on stats screen
+- [x] Remove flicker between demo sidenav and logged in sidenav when logging in
+- [ ] ~~Remove stale state when navigating between notebooks~~
+  - Will do this later. Need to update notebook to contain the number of users/notes. This way the server side render looks good. Otherwise, just clearing the notes and loading the new ones will cause excessive shifting.
+
+Additionally, update login page to follow Google branding guidelines
+- [x] Buttons need to describe the action taken. e.g. "Sign in with Google".
+
+# <a name="pwa"></a> Flotes as a PWA 
+A **PWA** (progressive web app) can significantly **improve the experience** for **mobile users**
+
+![pwa-banner](/pwa-2.png)
+
+TODO
+- [x] Update to svelte-kit 1.0
+- [x] Update pwa.png (192 & 512). Update: Will use white bg for now.
+- [x] Add configuration
+- [x] (Additional) Add dark overlay to `main` when sidenav is open on mobile
+
+Progress
+- [x] concept work - [POC](https://github.com/Everduin94/svelte-kit-pwa-example)
+- [x] development complete
+- [x] testing / deployment
+- [x] complete
+- [ ] article
