@@ -10,6 +10,9 @@ image:
 tags: ["flotes", "work in progress", "features"]
 ---
 
+**Have a comment or question?**
+-  [Join the discussion on Discord](https://discord.gg/GacTG3MHej)
+
 
 # Outline
 - [Privacy Policy & Terms of Service](#privacy)
