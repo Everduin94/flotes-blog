@@ -35,6 +35,14 @@ The first community notebooks have been started. All of the logic and UI is writ
 ![Community Notebook](/community-tw.png)
 
 ## Fixes
+- PWA Improvements: Flotes lazy loads potentially 100s of syntax files. The PWA was caching all possible files which caused installing the PWA and updating the PWA to take upwards of 30 seconds
+  - This caused two jarring behaviors:
+    - The "Install App" notification wouldn't come up for a significant amount of time.
+    - If you've already installed the PWA, the refresh may happen numerous seconds into using the app, instead of moments after entering the app 
+- Practice Local Storage fixes:
+  - Practice in demo now properly shows the practice token in the top right
+  - Previously, if you refresh/lose-connection/navigate-away/etc... while the answer/feedback was showing the correct/incorrect was lost.
+    - Now the app should take you back to where you left off.
 - UI Design Improvements:
   - Demo warning and demo stats warning now sit at the top of the UI
   - Visual improvements to highlighted text: like inline code, mark tags, and link tags.
