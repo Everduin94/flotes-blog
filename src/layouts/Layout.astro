@@ -18,7 +18,7 @@ import "../styles/global.css";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={metaDescription ?? defaultDescription}>
-    <title>{title}</title>
+    <title>Flotes Blog {title ? '-' : ''} {title}</title>
 
     <script is:inline>
       const theme = (() => {

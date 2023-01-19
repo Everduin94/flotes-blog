@@ -2,9 +2,10 @@
 import Header from "../components/Header.astro";
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
+import "../styles/global.css";
 ---
 
-<Layout title={frontmatter.title}>
+<Layout title={frontmatter.title} metaDescription={frontmatter.metaDescription}>
   <Header />
   <div class="mb-8"></div>
   <div class="mb-1.5 font-bold sm:text-5xl text-3xl">{frontmatter.title}</div>

@@ -6,7 +6,7 @@ html {
 }
 
 .dark body {
-  background-color: 	#1e1e2e;
+  background-color: #1e1e2e;
   color: #cdd6f4;
 }
 
@@ -26,12 +26,38 @@ h1 {
 }
 
 /* PROSE */
-h1, h2, h3, h4, strong {
-  color: #1e1e2e !important;
+h1,
+h2,
+h3,
+h4,
+strong {
+  --tw-prose-headings: #1e1e2e;
+  --tw-prose-bold: #1e1e2e;
 }
 
-.dark h1,.dark  h2,.dark  h3,.dark  h4,.dark  strong {
-  color: #cdd6f4 !important;
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark strong {
+  --tw-prose-headings: #cdd6f4;
+  --tw-prose-bold: #cdd6f4;
+}
+
+.dark a {
+  --tw-prose-links: #cba6f7;
+}
+
+.dark footer a {
+  color: #cba6f7;
+}
+
+a {
+  --tw-prose-links: #8839ef;
+}
+
+footer a {
+  color: #8839ef;
 }
 
 /* END PROSE */
@@ -72,3 +98,25 @@ h1, h2, h3, h4, strong {
   }
 }
 
+/* Chromium */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  height: 8px;
+  background: #181825;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 8px;
+  --tw-bg-opacity: 1;
+  background-color: #45475a;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: #181825;
+  --tw-bg-opacity: 1;
+}
