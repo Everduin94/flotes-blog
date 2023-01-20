@@ -29,12 +29,25 @@ This caused us to write brittle code in some areas. This is now fixed by navigat
 
 ![Community Notebooks](/community-1.png)
 
-The first community notebooks have been started. All of the logic and UI is written, just waiting to finish content of first Notebooks to make them available for practice. 
+The first community notebook has been released 🥳
 
 👉 [Community Notebooks](https://flotes.app/home/community) | [Tailwind Grid](https://flotes.app/home/community/tailwind-css-grid) | [Supabase](https://flotes.app/home/community/supabase-basics)
 ![Community Notebook](/community-tw.png)
 
+
+## UI Improvements
+
+Some minor improvements to readability of the text and buttons to **increase contrast**
+
+![ui 1](/ui-1.png)
+
+After selecting `Again` the second `Show Answer` prompt will now show `Next` and `Again`. This is to help streamline and clarify that only **initial feedback** is captured.
+
+![ui 2](/ui-2.png)
+
+
 ## Fixes
+- Fixed the Archive Button in Demo
 - PWA Improvements: Flotes lazy loads potentially 100s of syntax files. The PWA was caching all possible files which caused installing the PWA and updating the PWA to take upwards of 30 seconds
   - This caused two jarring behaviors:
     - The "Install App" notification wouldn't come up for a significant amount of time.

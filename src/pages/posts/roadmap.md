@@ -17,13 +17,13 @@ tags: ["flotes", "work in progress", "features"]
 # Outline
 - [Privacy Policy & Terms of Service](#privacy)
 - [Mermaid Flowchart Diagrams](#mermaid)
-- [Starter / Public Decks](#starter)
 - [Spaced Repetition Controls](#spaced)
 - [Spaced Repetition Filters](#filters)
 
 # Complete
 - [Flotes as a PWA](#pwa)
 - [Loading & Auth Improvements](#auth)
+- [Starter / Public Decks](#starter)
 
 
 # <a name="privacy"></a> Privacy Policy and Terms of Service
@@ -56,17 +56,6 @@ Progress
 - [ ] testing / deployment
 - [ ] complete
 
-# <a name="starter"></a> Starter Decks
-
-Create a set of starter decks & examples
-- [ ] Create a new screen to house, filter, and search starter decks
-- [ ] Ability for user to copy these decks as their own
-
-Progress
-- [ ] concept work
-- [ ] development complete
-- [ ] testing / deployment
-- [ ] complete
 
 # Public Decks
 
@@ -153,3 +142,15 @@ Progress
 - [x] testing / deployment
 - [x] complete
 - [ ] article
+
+# <a name="starter"></a> Starter Decks
+
+Create a set of starter decks & examples
+- [x] Create a new screen to house starter decks
+- [x] Ability for user to copy these decks as their own
+
+Progress
+- [x] concept work
+- [x] development complete
+- [x] testing / deployment
+- [x] complete
