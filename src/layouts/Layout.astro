@@ -2,10 +2,12 @@
 export interface Props {
   title: string;
   metaDescription: string;
+  metaImg: string;
+  metaType: 'website' | 'article'
 }
-const { title } = Astro.props;
-const { metaDescription } = Astro.props;
-const defaultDescription = 'Free Tech Blog about Svelte, SvelteKit, Tailwind CSS, Astro, Supabase, Postgres, Typescript, Workflows, Productivity, Software Development, Web Dev, How to write better software. Roadmap and upcoming changes to the notetaking study app Flotes.'
+import { SEO } from "astro-seo";
+const { title, metaDescription, metaImg, metaType } = Astro.props;
+const defaultDescription = 'Web Dev Blog about Svelte, SvelteKit, Tailwind CSS, Astro, Supabase, Postgres, Typescript, Workflows, Productivity, Software Development, How to write better software. Roadmap and upcoming changes to the notetaking study app Flotes.'
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
 ---
@@ -17,8 +19,38 @@ import "../styles/global.css";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content={metaDescription ?? defaultDescription}>
-    <title>Flotes Blog {title ? '-' : ''} {title}</title>
+    <!-- <meta name="description" content={metaDescription ?? defaultDescription}>
+    <title>Flotes Blog {title ? '-' : ''} {title}</title> -->
+    <SEO
+      title={`Flotes Blog ${title ? '-' : ''} ${title}`}
+      description={metaDescription ?? defaultDescription}
+      openGraph={{
+        basic: {
+          title: `${title}`,
+          type: metaType ?? 'website',
+          image: metaImg ?? 'https://ik.imagekit.io/flotes/flotes-header.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674667619507',
+        },
+        image: {
+            alt: 'Header Banner'
+          }
+      }}
+      twitter={{
+        creator: "@BoogersLLC"
+      }}
+      extend={{
+        // extending the default link tags
+        link: [{ rel: "icon", href: "/favicon.ico" }],
+        // extending the default meta tags
+        meta: [
+          {
+            name: "twitter:image",
+            content: metaImg,
+          },
+          { name: "twitter:title", content: title},
+          { name: "twitter:description", content: metaDescription ?? defaultDescription},
+        ],
+      }}
+    />
 
     <script is:inline>
       const theme = (() => {

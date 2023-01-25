@@ -3,19 +3,21 @@ import Header from "../components/Header.astro";
 import Layout from "./Layout.astro";
 const { frontmatter } = Astro.props;
 import "../styles/global.css";
+import { Image } from '@astrojs/image/components';
 ---
 
-<Layout title={frontmatter.title} metaDescription={frontmatter.metaDescription}>
+<Layout title={frontmatter.title} metaDescription={frontmatter.metaDescription} metaImg={frontmatter.metaImg} metaType={frontmatter.metaType}>
   <Header />
   <div class="mb-8"></div>
   <div class="mb-1.5 font-bold sm:text-5xl text-3xl">{frontmatter.title}</div>
-  <div class="mb-2 sm:text-xl text-lg dark:text-slate-500 text-slate-600">
+  <h2 class="mb-2  dark:text-slate-500 text-slate-600">
     {frontmatter.description}
-  </div>
+  </h2>
   <div class="grid grid-flow-col auto-cols-max items-center gap-3">
     <!-- Publish Date -->
     <p class="text-sm text-slate-500">
-      {new Date(frontmatter.pubDate.slice(0, 10)).toDateString()}
+      <span>Posted:</span>
+      <span class="text-blue-600 dark:text-blue-400">{new Date(frontmatter.pubDate.slice(0, 10)).toDateString()}</span>
     </p>
 
     <!-- Tags -->
@@ -32,7 +34,7 @@ import "../styles/global.css";
     </div>
   </div>
   <div class="mb-4"></div>
-  <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
+  <Image width={1080} aspectRatio="16:9" src={frontmatter.image.url} alt={frontmatter.image.alt} />
   <div class="mb-8"></div>
   <div class="prose prose-slate dark:prose-invert pb-8 mocha">
     <slot />

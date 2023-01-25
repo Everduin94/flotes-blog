@@ -1,12 +1,15 @@
 ---
 import Social from "./Social.astro";
 
-const { url, title, description } = Astro.props;
+const { url, title, description, pubDate} = Astro.props;
 ---
 
-<li class="hover:outline-[#cba6f7] hover:outline rounded-md px-2 py-1">
+<li class="hover:text-[#8839ef] dark:hover:text-[#cba6f7] transition-colors rounded-md px-2 py-1">
   <a href={url}>
-    <div class="sm:text-4xl text-2xl font-bold">{title}</div>
-    <div class="text-lg text-slate-500">{description}</div>
+    <div class="sm:text-4xl text-2xl font-bold mb-0.5">{title}</div>
+    <div class="grid ml-0.5">
+      <div class="text-sm text-slate-500">Posted: <span class="text-blue-600 dark:text-blue-400">{pubDate}</span></div>
+      <div class="text-lg text-slate-500">{description}</div>
+    </div>
   </a>
 </li>

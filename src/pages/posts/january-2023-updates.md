@@ -4,9 +4,11 @@ title: 'Changes January 2023'
 pubDate: 01-07-2023
 description: 'Flotes features, fixes, and improvements January 2023'
 author: 'Flotes'
+metaType: 'article'
 image:
     url: '/header-banner.png' 
     alt: 'Flotes home page as a banner'
+metaImg: 'https://ik.imagekit.io/flotes/flotes-header.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674667619507'   
 tags: ["flotes", "change-log", "work in progress"]
 ---
 

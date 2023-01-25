@@ -17,7 +17,15 @@ module.exports = {
      },
      typography: {
          DEFAULT: {
-           css: {}
+           css: {
+              'code::before': {
+                content: 'none', // don’t generate the pseudo-element
+//                content: '""', // this is an alternative: generate pseudo element using an empty string
+              },
+              'code::after': {
+                content: 'none'
+              },
+           }
        }
      }
    },

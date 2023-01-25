@@ -1,12 +1,14 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Flotes Roadmap 2023'
-pubDate: 07-01-2022
+pubDate: 12-01-2022
 description: 'Upcoming changes and ideas. Join our Discord to provide feedback!'
 author: 'Flotes'
+metaType: 'article'
 image:
-    url: '/header-banner.png' 
+    url: 'https://ik.imagekit.io/flotes/flotes-header.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674667619507' 
     alt: 'Flotes home page as a banner'
+metaImg: 'https://ik.imagekit.io/flotes/flotes-header.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674667619507'    
 tags: ["flotes", "work in progress", "features"]
 ---
 

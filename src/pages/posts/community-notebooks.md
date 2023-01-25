@@ -5,9 +5,11 @@ pubDate: 01-19-2023
 description: 'Announcement of First Community Notebooks 🥰'
 metaDescription: 'Tailwind CSS Grid interactive notes and learning. Free Tailwind learning resource.'
 author: 'Flotes'
+metaType: 'article'
 image:
     url: '/community-tw.png' 
     alt: 'Tailwind CSS Grid Banner'
+metaImg: 'https://ik.imagekit.io/flotes/flotes-header.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674667619507'
 tags: ["flotes", "announcement", "tailwind"]
 ---
 

@@ -1,13 +1,15 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Fontawesome Icons Disappear'
+title: 'Fa Icons Disappear'
 pubDate: 01-20-2023
 description: 'Fontawesome icons missing in production Vite build? Here is a possible cause and solution'
 metaDescription: 'Vite Icon Missing / Disappearing Bug. Vite Fontawesome Icons Disappear in Production. My Font Awesome icons are randomly missing.'
 author: 'Flotes'
+metaType: 'article'
 image:
     url: '/vite.png' 
     alt: 'Vite logo banner'
+metaImg: 'https://ik.imagekit.io/flotes/flotes-header.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674667619507'
 tags: ["Vite", "Bug Fix", "Coding"]
 ---
 
@@ -19,9 +21,9 @@ I recently ran into an issue where **Fontawesome icons would show** for a moment
 
 When a Fontawesome icon is imported with a **treeshakeable** import **in multiple files**, it disppears the 2nd time the import is invoked. -- We can verify this in the network tab. Our icon is coming down as an **empty object**. 
 
-**Context** -- *A treeshakeable import in Fontawesome is when we import like this.*
+**`💡Context`**  *A treeshakeable import in Fontawesome is when we import like this:*
 
-import { faDiscord } from "@fortawesome/free-brands-svg-icons/**faDiscord**";
+- *import { faDiscord } from "@fortawesome/free-brands-svg-icons/**faDiscord**";*
 
 ![Network Icons](/network-icons.png)
 
@@ -30,10 +32,19 @@ import { faDiscord } from "@fortawesome/free-brands-svg-icons/**faDiscord**";
 
 We create a **single file** for importing icons that are used in **multiple places** in the project
 
-`icons.ts`
+<div class="file-header">
+  <div class="circles">
+    <div class="circle red"></div>
+    <div class="circle yellow"></div>
+    <div class="circle green"></div>
+  </div>
+  icons.ts
+</div>
 
-```
-import { definition as discord } from "@fortawesome/free-brands-svg-icons/faDiscord";
+```typescript
+import {
+  definition as discord 
+} from "@fortawesome/free-brands-svg-icons/faDiscord";
 export const faDiscord =  discord
 ```
 
