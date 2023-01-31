@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'How I Made My App 2.4x Faster Switching to Svelte'
-pubDate: 02-01-2023
+pubDate: 01-31-2023
 description: 'Server side rendering, lazy loading, pre-render, and less javascript'
 metaDescription: 'Perfect Lighthouse scores with server side rendering, lazy loading, pre-render, and less javascript'
 author: 'Flotes'
@@ -130,11 +130,11 @@ Again, other frameworks can achieve this. It's more so how easy and intuitive sv
 
 Svelte just ships less javascript. And (imo) makes it easier to **write apps with less code** / boilerplate. 
 
-Comparing the size of the packages. -- *See caveat
+Comparing the size of the packages. Svelte is significantly smaller.
 - [Svelte Package Size](https://bundlephobia.com/package/svelte@3.55.0)
 - [Angular Package Size](https://bundlephobia.com/package/@angular/core@15.0.4)
 
-> Not a totally fair comparison, Angular brings a lot, and by contrast this doesn't include kit. However, Angular brings on a lot of overhead. And claims that svelte has to pull in a bunch of separate libraries is *not* necessarily true. This is because it uses native web apis where possible and provides things like `store`.
+**Caveat**. Not a totally fair comparison, Angular brings a lot, and by contrast this doesn't include kit. However, Angular brings on a lot of overhead. And claims that svelte has to pull in a bunch of separate libraries is *not* necessarily true. This is because it uses native web apis where possible and provides things like store.
 
 Svelte Kit makes it **intuitive to write code on the server** as well. The experience of moving code out to the server, even as a frontend developer, is relatively easy. Which means **less code on the client**.
 

@@ -66,6 +66,20 @@ strong {
   --tw-prose-body: #cdd6f4;
 }
 
+.dark blockquote {
+  --tw-prose-quotes: #cdd6f4;
+  --tw-prose-code: #1e40af;
+}
+
+
+.dark .prose blockquote {
+  --tw-prose-quotes: #cdd6f4;
+  --tw-prose-code: #1e40af;
+
+}
+
+
+
 .prose {
 --tw-prose-body: #1E1E2E;
 }
