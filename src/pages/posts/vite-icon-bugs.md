@@ -6,6 +6,7 @@ description: 'Fontawesome icons missing in production Vite build? Here is a poss
 metaDescription: 'Vite Icon Missing / Disappearing Bug. Vite Fontawesome Icons Disappear in Production. My Font Awesome icons are randomly missing.'
 author: 'Flotes'
 metaType: 'article'
+metaPath: 'vite-icon-bugs'
 image:
     url: '/vite.png' 
     alt: 'Vite logo banner'

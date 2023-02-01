@@ -6,6 +6,7 @@ description: 'Server side rendering, lazy loading, pre-render, and less javascri
 metaDescription: 'Perfect Lighthouse scores with server side rendering, lazy loading, pre-render, and less javascript'
 author: 'Flotes'
 metaType: 'article'
+metaPath: 'flotes-2x-faster'
 image:
     url: 'https://ik.imagekit.io/flotes/Fasttt_2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675187392759' 
     alt: 'Demon slayer with svelte and angular logos'
@@ -15,13 +16,13 @@ tags: ["Svelte", "Performance", "Coding"]
 
 ## Origin
 
-In June of 2022, I finally became curious (and frustrated) enough to give something new a try. -- That something was **Svelte(Kit)**.
+In June of 2022, I became curious (and frustrated) enough to give something new a try. -- That something was **Svelte(Kit)**.
 
 I had been working on Enterprise applications in Angular for years, and so I always wrote my side projects in Angular as well.
 
 One weekend, I was hell-bent on **improving my lighthouse score** and speeding up the apps initial page load.
 
-I spent hours refactoring, lazy loading, removing dependencies. After everything I tried **my scores were still far from ideal** in production.
+I spent hours refactoring, lazy loading, removing dependencies. After everything I tried, **my scores were still far from ideal** in production.
 
 This article is not to say that Angular *can't* be fast. That's not true. It's that **Svelte Kit** makes it **intuitive** to be **fast**.
 
@@ -77,7 +78,7 @@ Just about every framework comes with some implementation of `lazy loading` / `c
 
 Svelte leverages Vite which makes lazy loading intuitive & practically automatic.
 
-For example, a component or page's dependencies won't be loaded until that component/page is created. So just by only importing what we need, we're effectively lazy loading everything else.
+For example, a component or page's dependencies won't be loaded until that component/page is created. So, by only importing what we need, we're effectively lazy loading everything else.
 
 <div class="file-header">
   <div class="circles">

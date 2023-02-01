@@ -5,6 +5,7 @@ pubDate: 01-07-2023
 description: 'Flotes features, fixes, and improvements January 2023'
 author: 'Flotes'
 metaType: 'article'
+metaPath: 'january-2023-updates'
 image:
     url: '/header-banner.png' 
     alt: 'Flotes home page as a banner'

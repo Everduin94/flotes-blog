@@ -6,6 +6,7 @@ description: 'Announcement of First Community Notebooks 🥰'
 metaDescription: 'Tailwind CSS Grid interactive notes and learning. Free Tailwind learning resource.'
 author: 'Flotes'
 metaType: 'article'
+metaPath: 'community-notebooks'
 image:
     url: '/community-tw.png' 
     alt: 'Tailwind CSS Grid Banner'

@@ -3,10 +3,11 @@ export interface Props {
   title: string;
   metaDescription: string;
   metaImg: string;
-  metaType: 'website' | 'article'
+  metaType: 'website' | 'article';
+  metaPath: string;
 }
 import { SEO } from "astro-seo";
-const { title, metaDescription, metaImg, metaType } = Astro.props;
+const { title, metaDescription, metaImg, metaType, metaPath } = Astro.props;
 const defaultDescription = 'Web Dev Blog about Svelte, SvelteKit, Tailwind CSS, Astro, Supabase, Postgres, Typescript, Workflows, Productivity, Software Development, How to write better software. Roadmap and upcoming changes to the notetaking study app Flotes.'
 import Footer from "../components/Footer.astro";
 import "../styles/global.css";
@@ -24,15 +25,17 @@ import "../styles/global.css";
     <SEO
       title={`Flotes Blog ${title ? '-' : ''} ${title}`}
       description={metaDescription ?? defaultDescription}
+      canonical={'https://blog.flotes.app/posts/' + metaPath}
       openGraph={{
         basic: {
           title: `${title}`,
           type: metaType ?? 'website',
           image: metaImg ?? 'https://ik.imagekit.io/flotes/flotes-header.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674667619507',
+          url: 'https://blog.flotes.app/posts/' + metaPath
         },
         image: {
             alt: 'Header Banner'
-          }
+        }
       }}
       twitter={{
         creator: "@BoogersLLC"
