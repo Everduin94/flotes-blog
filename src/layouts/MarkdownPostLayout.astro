@@ -6,7 +6,7 @@ import "../styles/global.css";
 import { Image } from '@astrojs/image/components';
 ---
 
-<Layout title={frontmatter.title} metaDescription={frontmatter.metaDescription} metaImg={frontmatter.metaImg} metaType={frontmatter.metaType}>
+<Layout title={frontmatter.title} metaDescription={frontmatter.metaDescription} metaImg={frontmatter.metaImg} metaType={frontmatter.metaType} metaPath={frontmatter.metaPath}>
   <Header />
   <div class="mb-8"></div>
   <div class="mb-1.5 font-bold sm:text-5xl text-3xl">{frontmatter.title}</div>
