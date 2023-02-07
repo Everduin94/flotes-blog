@@ -7,6 +7,7 @@ metaDescription: 'Vite Icon Missing / Disappearing Bug. Vite Fontawesome Icons D
 author: 'Flotes'
 metaType: 'article'
 metaPath: 'vite-icon-bugs'
+post_type: '/snippets'
 image:
     url: '/vite.png' 
     alt: 'Vite logo banner'

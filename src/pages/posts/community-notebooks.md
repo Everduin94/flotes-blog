@@ -7,6 +7,7 @@ metaDescription: 'Tailwind CSS Grid interactive notes and learning. Free Tailwin
 author: 'Flotes'
 metaType: 'article'
 metaPath: 'community-notebooks'
+post_type: '/change_log'
 image:
     url: '/community-tw.png' 
     alt: 'Tailwind CSS Grid Banner'

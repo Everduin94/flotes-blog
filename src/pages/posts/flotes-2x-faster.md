@@ -7,6 +7,7 @@ metaDescription: 'Perfect Lighthouse scores with server side rendering, lazy loa
 author: 'Flotes'
 metaType: 'article'
 metaPath: 'flotes-2x-faster'
+post_type: '/'
 image:
     url: 'https://ik.imagekit.io/flotes/Fasttt_2.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675187392759' 
     alt: 'Demon slayer with svelte and angular logos'
@@ -74,7 +75,7 @@ With SSR, the server sends rendered HTML on first load and then hydrates it. Thi
 
 ### Lazy Loading
 
-Just about every framework comes with some implementation of `lazy loading` / `code splitting`.
+Just about every framework comes with some implementation of `lazy loading`.
 
 Svelte leverages Vite which makes lazy loading intuitive & practically automatic.
 

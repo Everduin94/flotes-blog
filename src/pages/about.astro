@@ -1,116 +1,59 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
-
-const pageTitle = "About Me";
-const identity = {
-  firstName: "Erik",
-  country: "United States",
-  occupation: "Software Engineer",
-  hobbies: ["programming", "brazilian jiu jitsu", "nature"],
-};
-
-const skills = [
-  "Svelte",
-  "Tailwind",
-  "Astro",
-  "Angular",
-  "Java",
-  "Neovim",
-  "Linux",
-];
-
-const happy = true;
-const finished = false;
-const goal = 3;
-const skillColor = "navy";
+import Tabs from "../components/Tabs.svelte";
+import { tabs } from "./tabs";
+import Intro from "../components/Intro.astro";
 ---
 
-<Layout title="Flotes Blog">
+<Layout title="Web Dev and Learning">
   <main>
     <Header />
+    <Intro />
+    <Tabs tabs={tabs} pathname={Astro.url.pathname} client:idle />
 
-    <h1>{pageTitle}</h1>
-    <h2>... and my new Astro site!</h2>
+   <div class="prose">
 
+    <h2 class="mt-8 text-3xl font-bold mb-4">Hello There 👋</h2>
     <p>
-      I am working through Astro's introductory tutorial. This is the second
-      page on my website, and it's the first one I built myself!
+Flotes is an app I created to efficiently take & study notes that work like flash cards.
     </p>
-
     <p>
-      This site will update as I complete more of the tutorial, so keep checking
-      back and see how my journey is going!
+While working on Flotes. I noticed what worked for me in a team at my full-time job, did not hold up to what worked best for me in my side projects.
     </p>
+    <p>
+And so I created this blog with a few ideas in mind:
+    </p>
+    <ul>
+    <li>How to create succesful side projects</li>
+    <li>The difference between engineering at a large company, and independently</li>
+    <li>Share things I learn along the way</li>
+    <li>Announce updates</li>
+    </ul>
+    <p>
+    Outside of programming. I live with my wonderful fiancee and our 7 pets. I am a BJJ Black Belt,  enjoy watching anime, going outside, cooking, and I've recently gotten into D&D :)
+    </p>
+    <p>
+    Their currently isn't a way to comment on this blog, and Flotes is not Open Source.  
+
+    
+    </p>
+    <p>
+   To comment or message me directly <code>BoogersLLC#7997</code>
+    </p>
+    <ul>
+      <li><a href="https://discord.gg/qKaKeGT8sZ">Join our Discord</a> </li>
+      <li><a href="https://twitter.com/BoogersLLC">Message me on Twitter</a> </li>
+      <li><a href="https://www.linkedin.com/in/erik-verduin/">Message me on LinkedIn</a> </li>
+    </ul>
+
+   <p class="mb-8">
+   Thanks for taking the time to look at my blog and get to know a little more about me :)
+   </p>
+
+
+   </div>
+
+
   </main>
-  <p>Here are a few facts about me:</p>
-  <ul>
-    <li>My name is {identity.firstName}.</li>
-    <li>I live in {identity.country} and I work as a {identity.occupation}.</li>
-    {
-      identity.hobbies.length >= 2 && (
-        <li>
-          Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}
-        </li>
-      )
-    }
-  </ul>
-  <p>My skills are:</p>
-  <ul>
-    {skills.map((skill) => <li class="skill">{skill}</li>)}
-  </ul>
-
-  {happy && <p>I am happy to be learning Astro!</p>}
-
-  {finished && <p>I finished this tutorial!</p>}
-
-  {
-    goal === 3 ? (
-      <p>My goal is to finish in 3 days.</p>
-    ) : (
-      <p>My goal is not 3 days.</p>
-    )
-  }
-
-  <Footer />
 </Layout>
-
-<style define:vars={{ skillColor }}>
-  .skill {
-    color: var(--skillColor);
-    font-weight: bold;
-  }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-  .instructions {
-    line-height: 1.6;
-    margin: 1rem 0;
-    border: 1px solid rgba(var(--accent), 25%);
-    background-color: white;
-    padding: 1rem;
-    border-radius: 0.4rem;
-  }
-  .instructions code {
-    font-size: 0.875em;
-    font-weight: bold;
-    background: rgba(var(--accent), 12%);
-    color: rgb(var(--accent));
-    border-radius: 4px;
-    padding: 0.3em 0.45em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 1rem;
-    padding: 0;
-  }
-</style>

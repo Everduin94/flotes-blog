@@ -6,6 +6,7 @@ description: 'Flotes features, fixes, and improvements January 2023'
 author: 'Flotes'
 metaType: 'article'
 metaPath: 'january-2023-updates'
+post_type: '/change_log'
 image:
     url: '/header-banner.png' 
     alt: 'Flotes home page as a banner'

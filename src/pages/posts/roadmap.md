@@ -6,6 +6,7 @@ description: 'Upcoming changes and ideas. Join our Discord to provide feedback!'
 author: 'Flotes'
 metaType: 'article'
 metaPath: 'roadmap'
+post_type: '/change_log'
 image:
     url: 'https://ik.imagekit.io/flotes/flotes-header.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674667619507' 
     alt: 'Flotes home page as a banner'

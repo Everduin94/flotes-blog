@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Tabs from "../components/Tabs.svelte";
+import PostList from "../components/PostList.astro";
+import { tabs } from "./tabs";
+import Intro from "../components/Intro.astro";
+---
+
+<Layout title="Web Dev and Learning">
+  <main>
+    <Header />
+    <Intro />
+    <Tabs tabs={tabs} pathname={Astro.url.pathname} client:idle />
+    <PostList post_type={Astro.url.pathname}/>
+  </main>
+</Layout>
