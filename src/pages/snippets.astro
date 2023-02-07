@@ -11,7 +11,7 @@ import Intro from "../components/Intro.astro";
   <main>
     <Header />
     <Intro />
-    <Tabs tabs={tabs} pathname={Astro.url.pathname} client:idle />
-    <PostList post_type={Astro.url.pathname}/>
+    <Tabs tabs={tabs} pathname={'/snippets'} client:idle />
+    <PostList post_type={'/snippets'}/>
   </main>
 </Layout>
