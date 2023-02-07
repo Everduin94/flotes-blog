@@ -1,0 +1,19 @@
+---
+// TODO: This could be a dynamic route.
+// -- Time crunch, just adding change_log, about, and snippets to get up and running
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Tabs from "../components/Tabs.svelte";
+import PostList from "../components/PostList.astro";
+import { tabs } from "./tabs";
+import Intro from "../components/Intro.astro";
+---
+
+<Layout title="Web Dev and Learning">
+  <main>
+    <Header />
+    <Intro />
+    <Tabs tabs={tabs} pathname={'/change_log'} client:idle />
+    <PostList post_type={'/change_log'}/>
+  </main>
+</Layout>

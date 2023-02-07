@@ -68,13 +68,13 @@ strong {
 
 .dark blockquote {
   --tw-prose-quotes: #cdd6f4;
-  --tw-prose-code: #1e40af;
+  --tw-prose-code: #1e1e2e;
 }
 
 
 .dark .prose blockquote {
   --tw-prose-quotes: #cdd6f4;
-  --tw-prose-code: #1e40af;
+  --tw-prose-code: #1e1e2e;
 
 }
 
@@ -93,12 +93,14 @@ footer a {
 }
 
 code {
-  --tw-prose-code: #1e40af;
+  --tw-prose-code: #1e1e2e;
   background: #93c5fd;
-  padding: 2px 6px;
-  border: 2px solid var(--tw-prose-code);
+  padding: 2px 8px;
   border-radius: 6px;
 }
+
+/* #1e1e2e; */
+/* #f9e2af; */
 
 .file-header + .astro-code {
   margin-top: 0px;
