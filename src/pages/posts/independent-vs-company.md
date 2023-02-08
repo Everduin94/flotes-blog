@@ -1,0 +1,118 @@
+---
+layout: ../../layouts/MarkdownPostLayout.astro
+title: 'Independent Software Developer vs Fortune 500 Software Engineer'
+pubDate: 02-08-2023
+description: 'The differences between being independent and at a company. My opinions on software development, and how I got here'
+metaDescription: 'Software development is filled with methodologies, best practices, and advice. Often, what works for a single independent developer, a small team, and a large company; may vary significantly'
+author: 'Flotes'
+metaType: 'article'
+metaPath: 'independent-vs-company'
+post_type: '/'
+image:
+    url: 'https://ik.imagekit.io/flotes/image_22.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675869356603' 
+    alt: 'Madara as Svelte fighting Shinobi Alliance as Angular'
+metaImg: 'https://ik.imagekit.io/flotes/image_22.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675869356603'
+tags: ["Engineer", "Coding", "Career"]
+---
+
+Software development is filled with **methodologies**, **best practices**, and **advice**. Often, what works for a single independent developer, a small team, and a large company; may vary significantly. 
+
+These practices can also vary by domain or type of project. For now, we'll focus on differences introduced by size & complexity.
+
+## Independent vs Company
+
+An Independent Developer:
+- May be unpaid, or purely recreational
+- May only work nights & weekends
+- Is most likely B2C, and not B2B
+- Does not work in or with teams
+- Handles both backend & frontend
+
+A Software Engineer at a Company:
+- Is most likely paid
+- Works approximately 40 hours a week
+- Could be B2C or B2B
+- Works in or with teams
+- Maybe only does backend or frontend
+
+I noticed **what worked for me in a team at my full-time job**, did **not** hold up for **what worked best for me in my side projects**.
+
+![Independent-vs-Company](/line-indie-company.png)
+
+### Company Workflow
+
+Things I use daily at a large company in a medium sized team. All of which are patterns set by architects & followed by engineers like me:
+- OOP and Redux-like patterns
+- Mandatory Code Coverage
+- Significant Unit/E2E/Integration Testing
+- Pull Requests and Mandatory Reviewers
+- Large number of modular libraries in a Monorepo
+- Angular (A frontend framework, ideal for enterprise-level development)
+- Numerous lint rules, sonar, and pre-commit hooks
+- Release branches / Cherry-picking
+- Extensive Design Mock-ups
+- Jira & Agile
+
+By contrast. I use almost **none (or very little)** of these methodologies in my side projects.
+
+### Independent Workflow
+
+In my side projects I strongly prefer:
+- Procedural programming
+- No mandatory coverage
+- Only testing critical paths if automating
+- No Pull Request Approvals
+- Projects are broke out by App & Shared
+- Svelte-Kit, Astro, & Tailwind
+- No error lint rules, sonar, or commit hooks
+- Feature deployments, but no cherry picking.
+- No External Designs or Mock-ups
+- No Jira or Agile
+
+![Rigid-vs-Flexible](/flex-rigid.png)
+
+This article will be a primer into further elaborating on these ideas. But I still need to write those articles :) 
+
+For now, here are many **references and explanations** that have **shaped my opinions over the years**.
+
+## Shaping my Software Opinions
+
+[Purple Cow & This is Marketing by Seth Godin](https://seths.blog/)
+- After reading these books, I realized my app wasn't designed to succeed, and restarted.
+- In 1 **month** I accrued **5x** as many users as my previous app did in 1 **year**.
+
+[Transitional Apps](https://www.youtube.com/watch?v=860d8usGC0o) and [Rethinking Reactivity by Rich Harris](https://www.youtube.com/watch?v=AdNJ3fydeao)
+- Both videos are fantastic. It was exciting to hear about a framework and really resonate with its ideas and values.
+
+[Object Oriented Programming is Bad by Brian Will](https://www.youtube.com/watch?v=QM1iUe6IofM)
+- You should watch all 3 parts. This has had a **huge influence** on the way I **prefer to code**.
+
+[Jonathan Blow](https://www.youtube.com/watch?v=KcP1fXQv0iU) -- Creator of Braid and the Witness
+- I started paying more attention to people who made games and worked with graphics. They're often **solving complex problems**, quickly, with few people.
+- Coincidentally, the best engineer I've ever worked with was extremely well versed in graphics and maps.
+
+[Chris at Machine](https://www.youtube.com/@chrisatmachine) 
+- I found his first series on Neovim a couple years ago and it **completely changed the way I edited**. His latest series on Neovim from scratch is pure gold.
+
+[Neovim Plugins by Folke](https://github.com/folke) 
+- I've taken a lot of inspiration from these plugins. This type of software made me realize just how much you can do simply by having: **sane defaults**, **flexible configuration**, and **good documentation**
+
+[Javascript 30 by Wes Bos](https://javascript30.com/)
+- My first taste of truly **high quality** and **inspiring** tutorials
+
+[What the Heck is the Event Loop](https://www.youtube.com/watch?v=8aGhZQkoFbQ)
+- This is one of those videos that I had to watch 3 times. I could watch it again today and still learn something.
+
+[The Death of Agile](https://www.youtube.com/watch?v=vSnCeJEka_s)
+- Allen Holub's recent takes on Twitter can be… uh questionable. 
+- But I agree with this video (for the most part) and helped me put in to words what **I don't like about Agile**.
+
+[Pragmatic Programmer](https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/)
+- I read this in my early 20s. It helped me realize **people don't know what they want**. You have to **show them options and iterate**.
+ 
+
+Clean Code by Robert Martin. 
+- Early in my career I read it front to back and tried to follow it for years. This is what lead me to find the video "Object Oriented Programming is Bad"
+- An important stepping stone in my journey, but I *don't* agree with many of the teachings in this book.
+
+Hopefully you find some of these useful like I did. Thanks for reading :)
