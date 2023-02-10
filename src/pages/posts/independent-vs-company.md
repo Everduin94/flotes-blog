@@ -1,6 +1,6 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Independent Software Developer vs Fortune 500 Software Engineer'
+title: 'Single-Developer vs Fortune 500 Software Engineer'
 pubDate: 02-08-2023
 description: 'The differences between developing independently and at a company. My opinions on software development, and how I got here'
 metaDescription: 'Software development is filled with methodologies, best practices, and advice. Often, what works for a developer working independently, a small team, and a large company; may vary significantly'
@@ -9,42 +9,28 @@ metaType: 'article'
 metaPath: 'independent-vs-company'
 post_type: '/'
 image:
-    url: 'https://ik.imagekit.io/flotes/image_22.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675869356603' 
-    alt: 'Madara as Svelte fighting Shinobi Alliance as Angular'
-metaImg: 'https://ik.imagekit.io/flotes/image_22.png?ik-sdk-version=javascript-1.4.3&updatedAt=1675869356603'
-tags: ["Engineer", "Coding", "Career"]
+    url: 'https://ik.imagekit.io/flotes/Screen_Shot_2023-02-10_at_8.42.33_AM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676040180304' 
+    alt: 'Flexible & Transient vs Rigid & Engineered'
+metaImg: 'https://ik.imagekit.io/flotes/Screen_Shot_2023-02-10_at_8.42.33_AM.png?ik-sdk-version=javascript-1.4.3&updatedAt=1676040180304'
+tags: ["Engineer", "Code", "Career"]
 ---
 
-I currently work at the Fortune 500 tech company Cisco. While I work here, I also work on side projects in my free-time. — I noticed what **worked for me in a team at my full-time job**, did **not** hold up for what **worked best for me in my side projects**.
+I currently work at the Fortune 500 tech company Cisco. While I work here, I also work on **one extensive side project** in my **free-time**. — I noticed what **worked for me in a team at my full-time job**, did **not** hold up for what **worked best for me in my side project**.
 
-Software development is filled with **methodologies**, **best practices**, and **advice**. Often, what works for a developer working independently, a small team, and a large company; may vary significantly. 
+Software development is filled with **methodologies**, **best practices**, and **advice**. Often, what works for a developer working by themself, a small team, and a large company; may vary significantly. 
 
-These practices can also vary by domain or type of project. For now, we’ll focus on differences introduced by **size & complexity**.
+These practices can also vary by domain or type of project. We’ll focus on differences introduced by **size & complexity**.
+- For example, the degree of automated testing needed for writing a SQL Database Engine may be more significant, regardless of size.
 
-Thus, the alternate title may be, **working on side projects vs working on company projects**.
+Thus, an alternate title may be, **working on side projects vs working on company projects**.
 
-> Clarification: When I say independent developer. I mean the sole developer working on a project without other programmers, designers, product, etc… Not contractors / freelances hired independently, that then may work in a team.
+> Clarification: By single-developer. I mean the sole developer working on a project without other programmers, designers, product, etc… Not contractors / freelances hired independently, that then may work in a team.
 
 
-## Independent vs Company
+## Single-Developer vs Enterprise
 
-An Independent Developer:
-- May be unpaid, or purely recreational
-- May only work nights & weekends
-- Is most likely B2C, and not B2B
-- Does not work in or with teams
-- Handles both backend & frontend
 
-A Software Engineer at a Company:
-- Is most likely paid
-- Works approximately 40 hours a week
-- Could be B2C or B2B
-- Works in or with teams
-- Maybe only does backend or frontend
-
-![Independent-vs-Company](/line-indie-company.png)
-
-### Company Workflow
+### Enterprise Workflow
 
 Things I use daily at a large company in a medium sized team. All of which are patterns set by architects & followed by engineers like me:
 - OOP and Redux-like patterns
@@ -60,7 +46,9 @@ Things I use daily at a large company in a medium sized team. All of which are p
 
 By contrast. I use almost **none (or very little)** of these methodologies in my side projects.
 
-### Independent Workflow
+![Independent-vs-Company](/line-indie-company.png)
+
+### Single-Developer Workflow
 
 In my side projects I strongly prefer:
 - Procedural programming
@@ -76,9 +64,11 @@ In my side projects I strongly prefer:
 
 ![Rigid-vs-Flexible](/flex-rigid.png)
 
-This article will be a primer into further elaborating on these ideas. But I still need to write those articles :) 
+When working as a **single-developer** I tend to prefer methodologies that are **flexible and transient**.
 
-For now, here are many **references and explanations** that have **shaped my opinions over the years**.
+It’s not that flexible & transient is better than rigid & engineered or vice versa. It’s more-so an evaluation of what is the **best tool for the job and the developer**.
+
+This article will be a primer into further elaborating on these ideas in future articles. For now, here are **references and explanations** that have **shaped my opinions over the years**. These have led me to think this way and prefer some of these options over others.
 
 ## Shaping my Software Opinions
 
