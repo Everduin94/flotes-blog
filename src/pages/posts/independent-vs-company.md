@@ -2,8 +2,8 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: 'Independent Software Developer vs Fortune 500 Software Engineer'
 pubDate: 02-08-2023
-description: 'The differences between being independent and at a company. My opinions on software development, and how I got here'
-metaDescription: 'Software development is filled with methodologies, best practices, and advice. Often, what works for a single independent developer, a small team, and a large company; may vary significantly'
+description: 'The differences between developing independently and at a company. My opinions on software development, and how I got here'
+metaDescription: 'Software development is filled with methodologies, best practices, and advice. Often, what works for a developer working independently, a small team, and a large company; may vary significantly'
 author: 'Flotes'
 metaType: 'article'
 metaPath: 'independent-vs-company'
@@ -15,9 +15,16 @@ metaImg: 'https://ik.imagekit.io/flotes/image_22.png?ik-sdk-version=javascript-1
 tags: ["Engineer", "Coding", "Career"]
 ---
 
-Software development is filled with **methodologies**, **best practices**, and **advice**. Often, what works for a single independent developer, a small team, and a large company; may vary significantly. 
+I currently work at the Fortune 500 tech company Cisco. While I work here, I also work on side projects in my free-time. — I noticed what **worked for me in a team at my full-time job**, did **not** hold up for what **worked best for me in my side projects**.
 
-These practices can also vary by domain or type of project. For now, we'll focus on differences introduced by size & complexity.
+Software development is filled with **methodologies**, **best practices**, and **advice**. Often, what works for a developer working independently, a small team, and a large company; may vary significantly. 
+
+These practices can also vary by domain or type of project. For now, we’ll focus on differences introduced by **size & complexity**.
+
+Thus, the alternate title may be, **working on side projects vs working on company projects**.
+
+> Clarification: When I say independent developer. I mean the sole developer working on a project without other programmers, designers, product, etc… Not contractors / freelances hired independently, that then may work in a team.
+
 
 ## Independent vs Company
 
@@ -34,8 +41,6 @@ A Software Engineer at a Company:
 - Could be B2C or B2B
 - Works in or with teams
 - Maybe only does backend or frontend
-
-I noticed **what worked for me in a team at my full-time job**, did **not** hold up for **what worked best for me in my side projects**.
 
 ![Independent-vs-Company](/line-indie-company.png)
 
