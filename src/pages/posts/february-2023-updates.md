@@ -32,7 +32,17 @@ Overview:
 - When practicing, the footer has been fixed so that it *always* displays on mobile. Before, you had to install as PWA, or the url-bar would hide the show answer. This was really really *really* confusing.
 - Fill in the blanks have been fixed on Safari/iPhone. Text was invisible. Additionally, outlines would go out of the bounds of their container. Now the outlines light up instead.
 - Improvements to this blog (yay). Posts are now organized by type, there's a new header, as well as an about me.
+- Links now open in a new tab instead of the current tab
 
-## Working on
+### Support for Mermaid
+- Support for mermaid `graph` and `sequenceDiagram`. 
+- Fill in the Blanks work inside of mermaid.
 
-- Support for Mermaid. This should be available this month.
+Example Syntax
+```mermaid
+graph TD;
+A[This is a Node]-->B[?- fill in the blank -?]
+```
+- `?- PHRASE -?` is a custom Flotes syntax that can be used in your mermaid charts to challenge yourself on its content.
+
+
