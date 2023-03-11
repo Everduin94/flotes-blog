@@ -21,17 +21,17 @@ tags: ["flotes", "wip", "features"]
 
 
 ## In Progress
-- **[Programming Course](#programming)**
+- **[Data Structures & Algorithms](#programming)**
 - [Privacy Policy & Terms of Service](#privacy)
 - [Spaced Repetition Controls](#spaced)
 - [Spaced Repetition Filters](#filters)
-- [Public Decks](#pub)
+- [Public Notebooks](#pub)
 
 ## Complete
 - [Mermaid Flowchart Diagrams](#mermaid)
 - [Flotes as a PWA](#pwa)
 - [Loading & Auth Improvements](#auth)
-- [Starter / Public Decks](#starter)
+- [Starter / Public Notebooks](#starter)
 
 ---
 
@@ -39,16 +39,22 @@ tags: ["flotes", "wip", "features"]
  
 ---
 
-# <a name="programming"></a> Programming Course
-
+# <a name="programming"></a> Data Structures & Algorithms
+### New Community Notebooks
+ 
 By far the largest challenge of being a single-developer is deciding how to divide your time. 
 Flotes has over 100 users but is still in somewhat of a vaccuum with little feedback. 
 
-So I'll be pausing work on the application to do a few things:
-- Heavily use the app, creating new community notebooks
-- Create a course/blogs/notes on a specific topic to promote Flotes
-- Improve the demo, add more data to show certain scenarios
-- Improve the landing page, add more animation/interactivity/sections
+To help kickstart a user in the application and to promote the app itself.
+
+I've been studying data structures and algorithms to create new community notebooks
+
+Additionally I'll also spend time:
+- Improving the demo, adding more data to show certain scenarios
+- Improving the landing page, adding more animation/interactivity/sections
+
+Revamping the community section is also on my radar. Currently it looks clunky and awkward. 
+I want to try and build a generic svelte table to house all of the notebooks
 
 # <a name="privacy"></a> Privacy Policy and Terms of Service
 
@@ -64,11 +70,11 @@ Action items:
 - [ ] Cookie Policy
 - [ ] Update site with links
 
-#  <a name="pub"></a> Public Decks
+#  <a name="pub"></a> Public Notebooks
 
-User public decks
-- [ ] Give users ability to make readonly decks public
-- [ ] Create flow for users to accept visibility of decks
+User public notebooks
+- [ ] Give users ability to make readonly notebooks public
+- [ ] Create flow for users to accept visibility of notebooks
 
 # <a name="spaced"></a> Spaced Repetition Controls
 *Spaced Repetition is calculation that notifies the user of the optimal time to study*
@@ -133,8 +139,8 @@ TODO
 - [x] Add configuration
 - [x] (Additional) Add dark overlay to `main` when sidenav is open on mobile
 
-# <a name="starter"></a> Starter Decks
+# <a name="starter"></a> Starter Notebooks
 
-Create a set of starter decks & examples
-- [x] Create a new screen to house starter decks
-- [x] Ability for user to copy these decks as their own
+Create a set of starter notebooks & examples
+- [x] Create a new screen to house starter notebooks
+- [x] Ability for user to copy these notebooks as their own

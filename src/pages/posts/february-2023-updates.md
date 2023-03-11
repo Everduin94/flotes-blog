@@ -33,6 +33,13 @@ Overview:
 - Fill in the blanks have been fixed on Safari/iPhone. Text was invisible. Additionally, outlines would go out of the bounds of their container. Now the outlines light up instead.
 - Improvements to this blog (yay). Posts are now organized by type, there's a new header, as well as an about me.
 - Links now open in a new tab instead of the current tab
+- Batch Fixes:
+  - A mermaid version failed in production on refresh, but not in dev. This is fixed by reverting to a previous version.
+  - Author always displayed the current users name. 
+  - Searching left the `enter` key bound even when the modal was closed
+    - Minor, redundantly binding and unbinding keys has been fixed. Not a noticable performance improvement but definitely unwanted.
+  - Padding applied to the bottom of the editor so if your text touches the bottom you can scroll down further
+  - Inline preview let text overflow instead of wrapping.
 
 ### Support for Mermaid
 - Support for mermaid `graph` and `sequenceDiagram`. 
