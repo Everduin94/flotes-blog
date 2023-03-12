@@ -25,24 +25,23 @@ Recently I wrote a lightweight open-source CLI for writing better commits. It he
 
 ## But, why write better commits?
 
-A good commit history helps others (and the future you) better understand your code and how it came to be that way.
+A good commit history helps others (*and the future you*) better understand your code and how it came to be that way.
 
 For myself, writing a good commit is like **writing good notes**. I want to write it in a way that **when I look back** I can **understand why and how** I made the decisions I did.
 
-better-commits and the Conventional Commit Guidelines, provide a way to format commits consistenly. Doing so can result in some cool side-effects, aside from making your commits easier to read and understand.
+`better-commits` and the [Conventional Commit Guidelines](https://www.conventionalcommits.org/en/v1.0.0-beta.4/), provide a way to format commits consistenly. Doing so can result in some **cool side-effects**, aside from making your commits easier to read and understand.
 - Automate versioning from commits with [semantic release](https://github.com/semantic-release/semantic-release)
 - Automate [change logs](https://github.com/lob/generate-changelog) from commits
 - Automate build processes based on commit
 - Auto reference & close issues to PRs
 - Auto populate the title and body of Github PRs and merge commits.
 
-
 ## Examples Commits
 
-Below are a few example commits. These follow the Conventional Commit Guidelines, and may provide some inspiration for writing better commits.
+Below are a few example commits. These follow the `Conventional Commit Guidelines`, and may provide some inspiration for writing better commits.
 
 ### New feature
-- The type of change, scope, Github ticket, and high-level description are all easily visible.
+- The type of change, scope, github issue, and high-level description are all easily visible.
 - The body explains what changed. Including the property name to enable.
 - The ticket is referenced in the footer, which connects the Github issue with its corresponding pull request.
 
@@ -105,6 +104,10 @@ docs: Fix tabbing in defaults section of readme
 
 ## Conclusion
 
-Thanks for reading! If you enjoy using my CLI, [star it on github](https://github.com/Everduin94/better-commits), so I feel like the special little snowflake my mother tells me I am.
+At my job as a software engineer, I've always followed branch and git commit guidelines. However, I've ignored maintaining a good commit history in my personal close-sourced projects. 
+
+As those projects have grown. I've realized that the small increased effort upfront, to write a good commit message, is worth the improved developer experience. -- And so I created `better-commits`. To be able to quickly and easily follow good practices across all of my projects.
+
+If you enjoy using the better-commits CLI, [⭐️ star it on github](https://github.com/Everduin94/better-commits), so I feel like the special little snowflake my mother tells me I am.
 
 
