@@ -29,7 +29,7 @@ A good commit history helps others (*and the future you*) better understand your
 
 For myself, writing a good commit is like **writing good notes**. I want to write it in a way that **when I look back** I can **understand why and how** I made the decisions I did.
 
-`better-commits` and the [Conventional Commit Guidelines](https://www.conventionalcommits.org/en/v1.0.0-beta.4/), provide a way to format commits consistenly. Doing so can result in some **cool side-effects**, aside from making your commits easier to read and understand.
+`better-commits` and the [Conventional Commit Guidelines](https://www.conventionalcommits.org/en/v1.0.0-beta.4/), provide a way to format commits consistently. Doing so can result in some **cool side-effects**, aside from making your commits easier to read and understand.
 - Automate versioning from commits with [semantic release](https://github.com/semantic-release/semantic-release)
 - Automate [change logs](https://github.com/lob/generate-changelog) from commits
 - Automate build processes based on commit
